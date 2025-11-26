@@ -11,19 +11,14 @@ Tags: [[programação\|programação]],[[c#\|c#]]
 
 Este documento tem com objetivo ser um guia para a programação de um jogo de campo minado para o console, feito em C#.
 ```mermaid
-xychart-beta
+graph TD
 
-    title "Sales Revenue"
+    A["Onde programar?"] --> B
 
-    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+    B["Dicas de programação (em geral)"] --> C
 
-    y-axis "Revenue (in $)" 4000 --> 11000
-
-    bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
-
-    line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+    C["Identificando os problemas"]
 ```
-
 ###### Referências
 
 
