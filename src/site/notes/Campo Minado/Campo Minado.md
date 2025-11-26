@@ -16,16 +16,6 @@ Este documento tem com objetivo ser um guia para a programação de um jogo de c
 |     | [[Dicas de programação\|Dicas de programação (opcional)]]                 |     |
 |     | [[Campo Minado/Identificando os problemas (campo minado)\|Identificando os problemas]] |     |
 
-```mermaid
-graph TD
-
-    A["Onde programar"] --> B
-
-    B["Dicas de programação (opcional)"] --> C
-
-    C["Identificando os problemas"]
-class A,B,C, internal-link;
-```
 ###### Referências
 
 
