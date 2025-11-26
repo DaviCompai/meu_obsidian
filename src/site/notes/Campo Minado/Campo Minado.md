@@ -6,15 +6,18 @@
 
 Status:beta
 
-Tags: [[programação\|programação]],[[c#\|c#]]
+Tags: [[programação\|programação]],[[csharp\|csharp]]
 # Campo Minado
 
 Este documento tem com objetivo ser um guia para a programação de um jogo de campo minado para o console, feito em C#.
 
-|     | [[Campo Minado/Onde programar\|Onde programar?]]                                       |     |
-| --- | ------------------------------------------------------------------------- | --- |
-|     | [[Dicas de programação\|Dicas de programação (opcional)]]                 |     |
-|     | [[Campo Minado/Identificando os problemas (campo minado)\|Identificando os problemas]] |     |
+|      |                   [[Campo Minado/Onde programar\|Onde programar?]]                   |      |
+| :--: | :---------------------------------------------------------------------: | :--: |
+|      |        [[Dicas de programação\|Dicas de programação (opcional)]]        |      |
+|      | [[Campo Minado/Identificando os desafios (campo minado)\|Identificando os desafios]] |      |
+| <br> |                                   🡓                                    | <br> |
+|      |                                                                         |      |
+|      |                                                                         |      |
 
 ###### Referências
 
