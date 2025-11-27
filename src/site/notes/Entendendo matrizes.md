@@ -22,7 +22,6 @@ class Program
 }
 ```
 Inicialmente, ela se parece com isso:
-(a primeira coluna representa o eixo Y, enquanto a primeira coluna de baixo para cima representa o eixo X)
 
 |  0  |  0  |  0  |  0  |  0  |
 | :-: | :-: | :-: | :-: | :-: |
