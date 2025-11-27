@@ -9,7 +9,7 @@ Status:beta
 Tags: [programação](programação.md)
 # Entendendo matrizes
 
-Uma matriz bidimensional pode ser representada como um plano cartesiano composto por valores inteiros.
+Uma matriz bidimensional pode ser representada como um plano cartesiano composto por valores inteiros (ou uma grade).
 
 Digamos que temos uma matriz chamada "rosto", onde um valor de 1 representa um pixel preto, e um valor de 0 representa um pixel branco.
 ```
