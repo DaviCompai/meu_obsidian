@@ -17,13 +17,13 @@ Acredito que podemos separar este programa em 3 desafios principais:
 Existem infinitas formas de criar as bombas, mas todas elas irão precisar comportar as características das mesmas.
 Essas características são as seguintes:
 **O bloco já foi interagido de alguma forma?** (valor booleano)
-![escondido (2).png](/img/user/escondido%20(2).png)
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/escondido%20(2).png)
 **O bloco é uma bomba?** (valor booleano)
-![bomba (2).png](/img/user/Campo%20Minado/Imagens%20Campo%20Minado/bomba%20(2).png)
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/bomba(2).png)
 **Se o bloco não for uma bomba, quantas bombas a ao redor do mesmo?**(valor inteiro)
-![Pasted image 20251126202612.png](/img/user/Pasted%20image%2020251126202612.png)
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/Pastedimage20251126202612.png)
 **Se o bloco não for uma bomba e nem foi interagido anteriormente, ele está marcado com uma bandeira?** (valor booleano)
-![bandeira (2).png](/img/user/bandeira%20(2).png)
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/bandeira(2).png)
 
 > [!faq]- E a localização?
 >Esta pergunta é valida!
@@ -59,8 +59,20 @@ Console.OutputEncoding = System.Text.Encoding.UTF8
 >
 >Essa informação se torna útil na próxima seção.
 
+## 2.**Criar o campo**
+O campo ficará dentro de uma matriz bidensional, já que o mesmo tem uma organização completamente compativel com ela.
 
-2.**Criar o campo**
+**REVISÃO**:
+Uma matriz bidimensional pode ser representada como um plano cartesiano composto por valores inteiros.
+Digamos que temos uma matriz chamada "Olho", onde um valor de 1 representa um pixel preto, e um valor de 0 representa um pixel branco.
+
+| X/Y | 0   | 1   | 2   | 3   | 4   |
+| --- | --- | --- | --- | --- | --- |
+| 0   |     |     |     |     |     |
+| 1   |     |     |     |     |     |
+| 2   |     |     |     |     |     |
+| 3   |     |     |     |     |     |
+| 4   |     |     |     |     |     |
 
 
 3.**Entrada do usuário**

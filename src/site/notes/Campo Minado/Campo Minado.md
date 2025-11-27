@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/campo-minado/campo-minado/"}
+{"dg-publish":true,"permalink":"/campo-minado/campo-minado/","tags":["gardenEntry"]}
 ---
 
 2025-11-26 17:54
