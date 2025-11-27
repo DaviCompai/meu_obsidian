@@ -6,7 +6,7 @@
 
 Status: beta
 
-Tags: [Campo Minado](Campo%20Minado.md)
+Tags: [[CampoMinado/Campo Minado\|Campo Minado]]
 # Identificando os desafios (campo minado)
 
 Minha forma favorita de organizar um programa é apartir dos desafios apresentados pela mesma. Dessa forma, consigo separar o código facilmente, sem ficar "perdido" em momento algum.
@@ -61,13 +61,24 @@ Console.OutputEncoding = System.Text.Encoding.UTF8
 >Essa informação se torna útil na próxima seção.
 
 ## 2.**Criar o campo**
-O campo ficará dentro de uma matriz bidensional, já que o mesmo tem uma organização completamente compativel com ela.
-*[revisão de matrizes/por que usar neste momento?](../Entendendo%20matrizes.md)*
+O campo ficará dentro de uma matriz dimensional, já que o mesmo tem uma organização completamente compatível com ela.
+*[[Entendendo matrizes\|revisão de matrizes/por que usar neste momento?]]*
 
+Para criar nossa matriz que representará o campo, podemos criar um método (mesmo que uma função)
+```
+    public static Espaco[,] criarCampo(int numeroDeBombas,int tamanhoX,int tamanhoY)
+    {
+        Espaco[,] campo = new Espaco[tamanhoX,tamanhoY];
+        return campo;
+    }
+```
+esse método cria e retorna uma matriz com a estrutura que representa cada espaço, porém, ele não gera as bombas.
+
+Parar gerar as bombas, você ira precisar adicionar algumas linhas que sorteiem campos aleatórios da gerada, e que declare o campo 
+2.1 **Saída para o terminal**
 
 3.**Entrada do usuário**
 
-4.**Saída para o terminal**
 
 
 
