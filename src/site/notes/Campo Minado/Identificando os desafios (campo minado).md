@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/campo-minado/identificando-os-desafios-campo-minado/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/campo-minado/identificando-os-desafios-campo-minado/"}
 ---
 
 2025-11-26 20:11
