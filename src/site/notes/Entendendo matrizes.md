@@ -24,13 +24,13 @@ class Program
 Inicialmente, ela se parece com isso:
 (a primeira coluna representa o eixo Y, enquanto a primeira coluna de baixo para cima representa o eixo X)
 
-|   0   |   0   |   0   |   0   |   0   |
-| :---: | :---: | :---: | :---: | :---: |
-|   0   |   0   |   0   |   0   |   0   |
-|   0   |   0   |   0   |   0   |   0   |
-|   0   |   0   |   0   |   0   |   0   |
-|   0   |   0   |   0   |   0   |   0   |
-Todos os valores estão zerados, então a imagem é completamente branca.
+|  0  |  0  |  0  |  0  |  0  |
+| :-: | :-: | :-: | :-: | :-: |
+|  0  |  0  |  0  |  0  |  0  |
+|  0  |  0  |  0  |  0  |  0  |
+|  0  |  0  |  0  |  0  |  0  |
+|  0  |  0  |  0  |  0  |  0  |
+###### Todos os valores estão zerados, então a imagem é completamente branca.
 visualmente:
 ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matriz_0.png)
 
@@ -54,7 +54,7 @@ gerando:
 |  0  |  0  |  0  |  0  |  0  |
 |  0  |  1  |  1  |  1  |  0  |
 |  0  |  0  |  0  |  0  |  0  |
-.
+###### .
 ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matriz_1.png)
 
 Você pode continuar expandindo esse exemplo, deixando o rosto feliz:
@@ -69,7 +69,7 @@ Você pode continuar expandindo esse exemplo, deixando o rosto feliz:
 |  1  |  0  |  0  |  0  |  1  |
 |  0  |  1  |  1  |  1  |  0  |
 |  0  |  0  |  0  |  0  |  0  |
-.
+###### .
 ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matriz_2.png)
 E então triste:
 ```
@@ -85,7 +85,7 @@ E então triste:
 |  0  |  0  |  0  |  0  |  0  |
 |  0  |  1  |  1  |  1  |  0  |
 |  1  |  0  |  0  |  0  |  1  |
-.
+###### .
 ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matriz_3.png)
 
 Acredito que esse exemplo demonstre como matrizes podem ser usadas para simbolizar grades de pixeis/objetos, como no projeto do campo minado.
