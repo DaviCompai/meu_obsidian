@@ -62,7 +62,8 @@ Console.OutputEncoding = System.Text.Encoding.UTF8
 
 ## 2.**Criar o campo**
 O campo ficará dentro de uma matriz bidensional, já que o mesmo tem uma organização completamente compativel com ela.
-*[REVISÃO MATRIZES](../Entendendo%20matrizes.md)*
+*[revisão de matrizes/por que usar neste momento?](../Entendendo%20matrizes.md)*
+
 
 3.**Entrada do usuário**
 
