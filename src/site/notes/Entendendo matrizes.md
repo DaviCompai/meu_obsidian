@@ -54,6 +54,7 @@ gerando:
 |  0  |  0  |  0  |  0  |  0  |
 |  0  |  1  |  1  |  1  |  0  |
 |  0  |  0  |  0  |  0  |  0  |
+.
 ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matriz_1.png)
 
 Você pode continuar expandindo esse exemplo, deixando o rosto feliz:
@@ -68,6 +69,7 @@ Você pode continuar expandindo esse exemplo, deixando o rosto feliz:
 |  1  |  0  |  0  |  0  |  1  |
 |  0  |  1  |  1  |  1  |  0  |
 |  0  |  0  |  0  |  0  |  0  |
+.
 ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matriz_2.png)
 E então triste:
 ```
@@ -83,7 +85,8 @@ E então triste:
 |  0  |  0  |  0  |  0  |  0  |
 |  0  |  1  |  1  |  1  |  0  |
 |  1  |  0  |  0  |  0  |  1  |
-![](/img/user/7 - Arquivos/matriz_3.png)
+.
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matriz_3.png)
 
 Acredito que esse exemplo demonstre como matrizes podem ser usadas para simbolizar grades de pixeis/objetos, como no projeto do campo minado.
 ###### Referências
