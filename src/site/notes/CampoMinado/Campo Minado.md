@@ -11,13 +11,12 @@ Tags: [[csharp\|csharp]]
 
 Este documento tem com objetivo ser um guia para a programação de um jogo de campo minado para o console, feito em C#.
 
-|      |                   [[CampoMinado/Onde programar\|Onde programar?]]                   |      |
-| :--: | :---------------------------------------------------------------------: | :--: |
-|      |        [[Dicas de programação\|Dicas de programação (opcional)]]        |      |
-|      | [[CampoMinado/Identificando os desafios (campo minado)\|Identificando os desafios]] |      |
-| <br> |                                   🡓                                    | <br> |
-|      |                                                                         |      |
-|      |                                                                         |      |
+[[CampoMinado/Onde programar\|Onde programar?]]
+
+[[Dicas de programação\|Dicas de programação (opcional)]]
+
+[[CampoMinado/Identificando os desafios (campo minado)\|Identificando os desafios]]
+
 >[!question]- Como uso o site?
 >No celular: Você pode encontrar o mapa na parte inferior de todas as páginas. 
 >No computador: Você pode encontrar o mapa na parte direita da página.
