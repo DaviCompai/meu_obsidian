@@ -74,7 +74,9 @@ Para criar nossa matriz que representará o campo, podemos criar um método (mes
 ```
 esse método cria e retorna uma matriz com a estrutura que representa cada espaço, porém, ele não gera as bombas.
 
-Parar gerar as bombas, você ira precisar adicionar algumas linhas que sorteiem campos aleatórios da gerada, e que declare o campo 
+Parar gerar as bombas, você ira precisar adicionar algumas linhas que sorteiem campos aleatórios da gerada, e que declare o campo .eBomba como verdadeiro.
+
+Para isso, você pode fazer um loop while que roda enquanto o número total de bombas não alcança o número desejado, com um [[Numeros aleatorios em csharp\|gerador de inteiros]] aleatórios tendo as cordenadas maximas x e y como número máximo (lembrando que matrizes começam em 0, então um campo com 8 de altura tem o y até 7).
 2.1 **Saída para o terminal**
 
 3.**Entrada do usuário**
