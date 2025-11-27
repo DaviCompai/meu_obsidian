@@ -9,9 +9,9 @@ Status: beta
 Tags:[[programação\|programação]]
 # Dicas de programação
 
-Caso você fale inglês, eu recomendo o canal do youtube [CodeAesthetic](https://www.youtube.com/@CodeAesthetic/videos),principalmente os vídeos ["Why You Shouldn't Nest Your Code"](https://www.youtube.com/watch?v=CFRhGnuXG-4) e ["# Naming Things in Code"](https://www.youtube.com/watch?v=-J3wNP6u5YU&t=59s).
+Caso você fale inglês, eu recomendo o canal do youtube [CodeAesthetic](https://www.youtube.com/@CodeAesthetic/videos),principalmente os vídeos ["Why You Shouldn't Nest Your Code"](https://www.youtube.com/watch?v=CFRhGnuXG-4) e ["Naming Things in Code"](https://www.youtube.com/watch?v=-J3wNP6u5YU&t=59s).
 
-Infelizmente não conheço nenhum recurso especialmente bom desse assunto.
+Infelizmente não conheço nenhum recurso especialmente bom desse assunto na língua portuguesa.
 
 ###### Referências
 
