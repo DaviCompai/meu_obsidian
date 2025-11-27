@@ -6,8 +6,12 @@
 
 Status:beta
 
-Tags: [[programação\|programação]],[[csharp\|csharp]]
+Tags: [[csharp\|csharp]]
 # Declaração correta de classes e structs em c sharp
+
+---
+
+## local:
 
 >[!danger] ERRADO:
 ```
@@ -71,9 +75,8 @@ public class Program
 }
 ```
 
----
-
 Caso seu código tenha um namespace explicito, a struct ou a classe devem ficar dentro do mesmo.
-###### Referências
+
+---
 
 
