@@ -9,7 +9,7 @@ Status:beta
 Tags: [[csharp\|csharp]]
 # Campo Minado
 
-Este documento tem com objetivo ser um guia para a programação de um jogo de campo minado para o console, feito em C#.
+Este documento tem com objetivo ser um guia para a programação de um jogo de campo minado para o console, feito em C#, sem mostrar todo o código necessário, mas guiando o leitor de forma detalhada do início ao fim do projeto.
 
 [[CampoMinado/Onde programar\|Onde programar?]]
 

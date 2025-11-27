@@ -56,13 +56,13 @@ Precisaremos escolher simbolos, assim como escolhemos atribuições anteriorment
 >[!Danger]- Atenção
 Em relação aos unicodes, certa cautela é necessária, já que alguns deles não aparecem no console, aparecendo como um "?". 
 Alguns deles começam a funcionar com a adição deste comando:
-Console.OutputEncoding = System.Text.Encoding.UTF8
+>```Console.OutputEncoding = System.Text.Encoding.UTF8```
 >
 >Essa informação se torna útil na próxima seção.
 
 ## 2.**Criar o campo**
 O campo ficará dentro de uma matriz dimensional, já que o mesmo tem uma organização completamente compatível com ela.
-*[[Entendendo matrizes\|revisão de matrizes/por que usar neste momento?]]*
+*[[Entendendo matrizes|revisão de matrizes/por que usar neste momento?]]*
 
 Para criar nossa matriz que representará o campo, podemos criar um método (mesmo que uma função)
 ```
@@ -74,12 +74,47 @@ Para criar nossa matriz que representará o campo, podemos criar um método (mes
 ```
 esse método cria e retorna uma matriz com a estrutura que representa cada espaço, porém, ele não gera as bombas.
 
+>[!FAQ]- Como testo meu método?
+>Você pode usar a função disponivel em 2.1, logo abaixo.
+
 Parar gerar as bombas, você ira precisar adicionar algumas linhas que sorteiem campos aleatórios da gerada, e que declare o campo .eBomba como verdadeiro.
 
-Para isso, você pode fazer um loop while que roda enquanto o número total de bombas não alcança o número desejado, com um [[Numeros aleatorios em csharp\|gerador de inteiros]] aleatórios tendo as cordenadas maximas x e y como número máximo (lembrando que matrizes começam em 0, então um campo com 8 de altura tem o y até 7).
-2.1 **Saída para o terminal**
+Para isso, você pode fazer um [loop for](https://www.rocketseat.com.br/blog/artigos/post/csharp-estruturas-de-repeticao-na-pratica) que roda até atingir o número de bombas desejado, com um [[Numeros aleatorios em csharp|gerador de inteiros]] sendo usado para escolher aleatoriamente o X e o Y de cada bomba.
 
-3.**Entrada do usuário**
+Porém, como faço para testar esse código?
+#### 2.1 **Saída para o terminal**
+Usaremos um método que percorre por todos os espaços de uma matriz e a imprime no console.
+
+Para isso, podemos usar dois loops for, um dentro do outro:
+```
+    public static void imprimir(Espaco[,] campoMinado)
+    {
+        for (int y = 0; y < campoMinado.GetLength(0); y++)
+        {
+            for (int x = 0; x < campoMinado.GetLength(1); x++)
+            {
+				if (campoMinado[x, y].eBomba)
+	            {
+	                Console.Write("!");
+				}
+				else
+				{
+					Console.Write("0");
+				}
+            }
+            Console.Write("\n");
+        }
+    }
+```
+(Não usaremos exatamente este método para a versão final do programa: ela tem função de teste.)
+
+campoMinado.GetLenght(V) mostra o tamanho da dimensão V, com X sendo a dimensão 0 e Y sendo a dimensão 1.
+Nessa método, nós printamos "!" se um espaço tiver uma bomba e "0" se não, e, quando chegamos ao final da mesma, avançamos para a próxima, até o fim da matriz.
+
+### Pronto!
+A parte do código que gera o campo já está pronta.
+
+## 3.**Entrada do usuário**
 
 
 
