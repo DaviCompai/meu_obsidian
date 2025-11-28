@@ -10,4 +10,20 @@ body {
     //  h1 {
     //   color: black;
     //  }
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&display=swap');
+    </style>
+
+    // <weight>: Use a value from 200 to 900
+    // <width>: Use a value from 75 to 125
+    // <uniquifier>: Use a unique and descriptive class name
+
+    .zalando-sans-<uniquifier> {
+      font-family: "Zalando Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" <width>;
+    }
 }
