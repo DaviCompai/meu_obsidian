@@ -9,12 +9,12 @@ Status: beta
 Tags: [[CampoMinado/Campo Minado\|Campo Minado]]
 # Identificando os desafios (campo minado)
 
-Minha forma favorita de organizar um programa é apartir dos desafios apresentados pela mesma. Dessa forma, consigo separar o código facilmente, sem ficar "perdido" em momento algum.
+Minha forma favorita de organizar um programa é apartir dos desafios apresentados pelo mesmo. Dessa forma, consigo separar o código facilmente, sem ficar "perdido" em momento algum.
 
 Acredito que podemos separar este programa em 3 desafios principais:
 
 ## 1.**Criar o bloco do campo**
-Existem infinitas formas de criar as bombas, mas todas elas irão precisar comportar as características das mesmas.
+Existem infinitas formas de criar os blocos, mas todas elas irão precisar comportar as características dos mesmos.
 Essas características são as seguintes:
 **O bloco já foi interagido de alguma forma?** (valor booleano)
 ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/escondido%20(2).png)
@@ -36,20 +36,26 @@ Pessoalmente acredito que neste caso o uso de structs seja mais adequado.
 >  Além disso, a [[Structs em Csharp#Atenção!\|forma que elas devem ser declaradas]] pode ser diferente em versões mais antigas do csharp
 Q
  
+ Recomendo que você faça a própria struct e as suas próprias variáveis com os nomes que soam mais intuitivos para você.
 Inicialmente, fiz a seguinte struct:
-```
-struct Espaco
-{
-    public bool foiInteragido = false;
-    public bool eBomba = false;
-    public bool eUmaBandeira = false;
-    public int? bombasAoRedor; 
-    // o ponto de interrogação significa "sem valor inicial"
-	public char? simbolo;
-	
-	public Espaco(){} //sem esta linha, as atribuições não funcionam corretamente
-}
-```
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/IdentificandoOsDesafios1.png)
+>[!abstract]- código
+>```
+>struct Espaco
+>{
+>    public bool foiInteragido = false
+>    public bool eBomba = false;
+>    public bool eUmaBandeira = false;
+>    public int? bombasAoRedor;
+>    // o ponto de interrogação significa "sem valor inicial"
+>    public char? simbolo;
+>    public Espaco(){} 
+>    //sem esta linha, as atribuições não funcionam corretamente
+> }
+>```
+
+
+
 A variável simbolo representa o valor que será mostrado no console quando o campo inteiro for exibido.
 
 Precisaremos escolher simbolos, assim como escolhemos atribuições anteriormente. Para isso, podemos usar caracteres usuais (letras ou simbolos mais comuns,números, etc) ou especiais (chamados de "unicodes"). 
@@ -72,12 +78,12 @@ Para criar nossa matriz que representará o campo, podemos criar um método (mes
         return campo;
     }
 ```
-esse método cria e retorna uma matriz com a estrutura que representa cada espaço, porém, ele não gera as bombas.
+esse método cria e retorna uma matriz com a estrutura que representa cada espaço, porém, ele não gera as bombas nem calcula quantas bombas estão presentes ao redor de cada espaço.
 
 >[!FAQ]- Como testo meu método?
 >Você pode usar a função disponivel em 2.1, logo abaixo.
 
-Parar gerar as bombas, você ira precisar adicionar algumas linhas que sorteiem campos aleatórios da gerada, e que declare o campo .eBomba como verdadeiro.
+Parar gerar as bombas, você ira precisar adicionar algumas linhas que sorteiem campos aleatórios da matriz gerada anteriormente, e que declare o campo booleano relacionado a presença de bombas como verdadeiro.
 
 Para isso, você pode fazer um [loop for](https://www.rocketseat.com.br/blog/artigos/post/csharp-estruturas-de-repeticao-na-pratica) que roda até atingir o número de bombas desejado, com um [[Numeros aleatorios em csharp|gerador de inteiros]] sendo usado para escolher aleatoriamente o X e o Y de cada bomba.
 
@@ -89,13 +95,13 @@ Para isso, podemos usar dois loops for, um dentro do outro:
 ```
     public static void imprimir(Espaco[,] campoMinado)
     {
-        for (int y = 0; y < campoMinado.GetLength(0); y++)
+        for (int y = 0; y < campoMinado.GetLength(1); y++)
         {
-            for (int x = 0; x < campoMinado.GetLength(1); x++)
+            for (int x = 0; x < campoMinado.GetLength(0); x++)
             {
 				if (campoMinado[x, y].eBomba)
 	            {
-	                Console.Write("!");
+		            Console.Write("!");
 				}
 				else
 				{
@@ -110,6 +116,7 @@ Para isso, podemos usar dois loops for, um dentro do outro:
 
 campoMinado.GetLenght(V) mostra o tamanho da dimensão V, com X sendo a dimensão 0 e Y sendo a dimensão 1.
 Nessa método, nós printamos "!" se um espaço tiver uma bomba e "0" se não, e, quando chegamos ao final da mesma, avançamos para a próxima, até o fim da matriz.
+#### 2.2 bombas Ao redor
 
 ### Pronto!
 A parte do código que gera o campo já está pronta.
