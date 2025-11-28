@@ -71,13 +71,16 @@ O campo ficará dentro de uma matriz dimensional, já que o mesmo tem uma organi
 *[[Entendendo matrizes|revisão de matrizes/por que usar neste momento?]]*
 
 Para criar nossa matriz que representará o campo, podemos criar um método (mesmo que uma função)
-```
-    public static Espaco[,] criarCampo(int numeroDeBombas,int tamanhoX,int tamanhoY)
-    {
-        Espaco[,] campo = new Espaco[tamanhoX,tamanhoY];
-        return campo;
-    }
-```
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/IdentificandoOsDesafios2.png)
+>[!abstract]- código
+>```
+>public static Espaco[,] criarCampo(int numeroDeBombas,int tamanhoX,int tamanhoY)
+>{
+>	Espaco[,] campo = new Espaco[tamanhoX,tamanhoY];
+>	return campo;
+>}
+>```
+
 esse método cria e retorna uma matriz com a estrutura que representa cada espaço, porém, ele não gera as bombas nem calcula quantas bombas estão presentes ao redor de cada espaço.
 
 >[!FAQ]- Como testo meu método?
@@ -92,26 +95,28 @@ Porém, como faço para testar esse código?
 Usaremos um método que percorre por todos os espaços de uma matriz e a imprime no console.
 
 Para isso, podemos usar dois loops for, um dentro do outro:
-```
-    public static void imprimir(Espaco[,] campoMinado)
-    {
-        for (int y = 0; y < campoMinado.GetLength(1); y++)
-        {
-            for (int x = 0; x < campoMinado.GetLength(0); x++)
-            {
-				if (campoMinado[x, y].eBomba)
-	            {
-		            Console.Write("!");
-				}
-				else
-				{
-					Console.Write("0");
-				}
-            }
-            Console.Write("\n");
-        }
-    }
-```
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/IdentificandoOsDesafios3.png)
+>[!abstract]- código
+>```
+>  public static void imprimir(Espaco[,] campoMinado)
+>   {
+> 	  for (int y = 0; y < campoMinado.GetLength(1); y++)
+>       {
+> 	          for (int x = 0; x < campoMinado.GetLength(0); x++)
+> 			 {
+> 				if (campoMinado[x, y].eBomba)
+> 				{
+> 				Console.Write("!");
+> 				}
+> 				else
+> 				{
+> 				Console.Write("0");
+> 				}
+> 			 }
+> 	   Console.Write("\n");
+> 	   }
+>  }
+>```
 (Não usaremos exatamente este método para a versão final do programa: ela tem função de teste.)
 
 campoMinado.GetLenght(V) mostra o tamanho da dimensão V, com X sendo a dimensão 0 e Y sendo a dimensão 1.
