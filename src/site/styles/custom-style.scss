@@ -1,2 +1,7 @@
-$font-family-base: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-$font-family-mono: 'Fira Code', 'Consolas', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+$font-family-base: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+
+body {
+  font-family: $font-family-base;
+}
