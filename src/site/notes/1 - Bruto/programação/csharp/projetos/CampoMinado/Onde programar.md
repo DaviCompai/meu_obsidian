@@ -6,7 +6,7 @@
 
 Status: completo
 
-Tags: [[3 - Tags/programação\|3 - Tags/programação]]
+Tags: [[3 - Tags/programação\|programação]]
 # Onde programar?
 
 ### No computador
