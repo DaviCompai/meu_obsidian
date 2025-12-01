@@ -6,7 +6,7 @@
 
 Status:beta
 
-Tags: [programação](programação.md)
+Tags: [[3 - Tags/programação\|programação]]
 # Entendendo matrizes
 
 Uma matriz bidimensional pode ser representada como um plano cartesiano composto por valores inteiros (ou uma grade).
