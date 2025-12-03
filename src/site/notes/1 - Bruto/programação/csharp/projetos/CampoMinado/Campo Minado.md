@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Campo Minado/","tags":["gardenEntry"],"created":"2025-08-09T21:15:23.346-03:00","updated":"2025-12-02T18:53:11.445-03:00"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Campo Minado/","tags":["gardenEntry"],"created":"2025-08-09T21:15:23.346-03:00","updated":"2025-12-02T22:05:49.453-03:00"}
 ---
 
 11-26-2025 17:54
@@ -7,7 +7,7 @@
 Status:beta
 
 Tags: [[3 - Tags/csharp\|csharp]]
->[!info]- ME CLIQUE!
+>[!info]- --> me clique <--
 >caixas coloridas como essa são clicáveis! elas geralmente tem informações extras e que podem ser uteis para alguns usúarios.
 >
 >[[1 - Bruto/programação/csharp/projetos/CampoMinado/Campo Minado\|SOU UM LINK]]
