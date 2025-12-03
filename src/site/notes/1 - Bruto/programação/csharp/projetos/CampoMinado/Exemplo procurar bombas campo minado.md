@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Exemplo procurar bombas campo minado/","created":"2025-12-02T22:09:04.863-03:00","updated":"2025-12-02T22:18:02.443-03:00"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Exemplo procurar bombas campo minado/","created":"2025-12-02T22:09:04.863-03:00","updated":"2025-12-02T22:31:18.451-03:00"}
 ---
 
 02-12-2025 22:09
@@ -70,7 +70,7 @@ Para `xDoBlocoAtual == 2` e `yDoBlocoAtual == 3`
 
 ---
 Para `xDoBlocoAtual == 3` e `yDoBlocoAtual ==1`
-![](/img/user/7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_4.png)
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matrizAcharBombas_4.png)
 `campoMinado[2,2].eBomba` é false:  
 IF não executa.
 
