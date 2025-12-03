@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Identificando os desafios (campo minado)/"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Identificando os desafios (campo minado)/","created":"2025-11-26T19:15:11.283-03:00","updated":"2025-12-02T22:03:16.451-03:00"}
 ---
 
-2025-11-26 20:11
+26-11-2025 20:11
 
 Status: beta
 
@@ -13,6 +13,7 @@ Minha forma favorita de organizar um programa é apartir dos desafios apresentad
 
 Acredito que podemos separar este programa em 3 desafios principais:
 
+---
 ## 1.**Criar o bloco do campo**
 Existem infinitas formas de criar os blocos, mas todas elas irão precisar comportar as características dos mesmos.
 Essas características são as seguintes:
@@ -66,6 +67,7 @@ Alguns deles começam a funcionar com a adição deste comando:
 >
 >Essa informação se torna útil na próxima seção.
 
+---
 ## 2.**Criar o campo**
 O campo ficará dentro de uma matriz dimensional, já que o mesmo tem uma organização completamente compatível com ela.
 *[[1 - Bruto/programação/Entendendo matrizes|revisão de matrizes/por que usar neste momento?]]*
@@ -122,10 +124,124 @@ Para isso, podemos usar dois loops for, um dentro do outro:
 campoMinado.GetLenght(V) mostra o tamanho da dimensão V, com X sendo a dimensão 0 e Y sendo a dimensão 1.
 Nessa método, nós printamos "!" se um espaço tiver uma bomba e "0" se não, e, quando chegamos ao final da mesma, avançamos para a próxima, até o fim da matriz.
 #### 2.2 bombas Ao redor
+Para calcular o número de bombas ao redor de um bloco, você irá precisar escanear a variável que represente ser uma bomba em todos os blocos ao redor, e, caso ela seja verdadeira, adicionar 1 ao valor que representa as bombas ao redor.
+
+>[!Danger]- Atenção!
+>O código para calcular o número de bombas ao redor só pode ser executado após o campo inteiro ser calculado
+
+Para a primeira parte, você pode usar um código similar a esse:
+
+>[!abstract]- código
+> ```
+> for (int xAoRedor = xAoRedorMin; xAoRedor <= xAoRedorMax; xAoRedor++)
+ >  {
+>	for (int yAoRedor = yAoRedorMin; yAoRedor <= yAoRedorMax; yAoRedor++)
+>	{
+>		//código que você deseja rodar.
+>		//irá precisar acessar o campo de alguma forma, usando
+>		//xAoRedor e yAoRedor como parametros.
+>	}
+ >  }
+ > ```
+
+Neste código, `xAoRedor` representa a coordenada x do bloco sendo testado atualmente; `xAoRedorMin` representa o menor valor x (nesse caso, deve ser `(xDoBlocoAtual) -1`) e `xAoRedorMax` representa o maior valor de x (nesse caso, deve ser `(xDoBlocoAtual) +1`),  com o mesmo para os valores de Y.
+
+é preciso executar este código para todos os espaços da matriz, o que pode ser atingido com dois loops for.
+>[!abstract]- pseudo-código
+> ```
+> 	Para todo valor X e valor Y dentro da matriz CampoMinado:
+> 		Para todo valor X entre os espaços X-1 e X+1, e para todo valor Y entre os espaços Y-1 e Y+1:
+> 			Se CampoMinado[xAoRedor,yAoRedor].Bomba for verdadeiro:
+> 				Some 1 a CampoMinado[xAtual,yAtual]
+ >```
+
+>[!abstract]- Exemplo:
+descobrindo a quantidade de números ao redor de `campoMinado[2,2]`
+(verde: bloco sendo processado)
+(vermelho: parte sendo testada)
+>(parenteses = valor real)
+]
+> ```
+> xAoRedorMin(1) = xDoBlocoAtual(2) - 1;
+> xAoRedorMax(3) = xDoBlocoAtual(2) +1;
+> yAoRedorMin(1) = yDoBlocoAtual(2) - 1;
+> xAoRedorMax(3) = xDoBlocoAtual(2) +1;
+> 
+> for (int xAoRedor = xAoRedorMin(1); xAoRedor <= xAoRedorMax(3); xAoRedor++)
+ >  {
+>	for (int yAoRedor = yAoRedorMin(1); yAoRedor <= yAoRedorMax(3); yAoRedor++)
+>	{
+>		if(campoMinado[xAoRedor,yAoRedor].eBomba)
+>		{
+>			campoMinado[xDoBlocoAtual(2),yDoBlocoAtual(2)].bombasAoRedor++;
+>		}
+>	}
+ >  }
+ > ```
+ > ![7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_1.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_1.png)
+ > ---
+ > ---
+ > para `xDoBlocoAtual == 1` e `yDoBlocoAtual == 1`:
+ > 
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matrizAcharBombas_2.png)
+> `campoMinado[1,1].eBomba` é true: 
+> IF executa: número de bombas cresce (`campoMinado[2,2].bombasAoRedor = 1`)
+> ---
+> Para `xDoBlocoAtual == 1` e `yDoBlocoAtual == 2`
+> 
+![7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_5.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_5.png)
+>`campoMinado[1,2].eBomba` é false:
+>IF não executa.
+>---
+Para `xDoBlocoAtual == 1` e `yDoBlocoAtual == 3`
+> 
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matrizAcharBombas_8.png)
+>`campoMinado[1,3].eBomba` é false:
+>IF não executa.
+>---
+>Para `xDoBlocoAtual == 2` e `yDoBlocoAtual == 1`
+> 
+![7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_3.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_3.png)
+>`campoMinado[2,1].eBomba` é false:
+>IF não executa.
+>---
+>Para `xDoBlocoAtual == 2` e `yDoBlocoAtual == 2
+> 
+![7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_6.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_6.png)
+>`campoMinado[2,2].eBomba` é false:
+>IF não executa.
+>---
+Para `xDoBlocoAtual == 2` e `yDoBlocoAtual == 3`
+> 
+![7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_9.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_9.png)
+>`campoMinado[3,2].eBomba` é true:
+> IF executa: número de bombas cresce (`campoMinado[2,2].bombasAoRedor = 2`)
+>---
+>Para `xDoBlocoAtual == 3` e `yDoBlocoAtual ==1`
+>
+![7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_4.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_4.png)
+>
+`campoMinado[2,2].eBomba` é false:  
+IF não executa.
+>---
+>Para `xDoBlocoAtual == 3` e `yDoBlocoAtual == 2`
+>
+![7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_7.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_7.png)
+>
+`campoMinado[2,2].eBomba` é false:  
+IF não executa.
+>---
+>Para `xDoBlocoAtual == 3` e `yDoBlocoAtual == 3
+>
+![7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_10.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_10.png)
+>
+`campoMinado[2,2].eBomba` é true:  
+IIF executa: número de bombas cresce (`campoMinado[2,2].bombasAoRedor = 3`)
 
 ### Pronto!
 A parte do código que gera o campo já está pronta.
 
+---
 ## 3.**Entrada do usuário**
 
 
