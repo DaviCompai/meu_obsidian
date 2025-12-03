@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/Structs em Csharp/"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/Structs em Csharp/","created":"2025-11-27T14:16:42.836-03:00","updated":"2025-11-30T23:55:07.568-03:00"}
 ---
 
-2025-11-26 20:49
+26-11-2025 20:49
 
 Status:beta
 

@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Onde programar/"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Onde programar/","created":"2025-11-26T18:27:21.617-03:00","updated":"2025-11-30T23:54:38.556-03:00"}
 ---
 
-2025-11-26 18:27
+26-11-2025 18:27
 
 Status: completo
 

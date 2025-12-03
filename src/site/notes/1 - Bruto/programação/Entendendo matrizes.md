@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/Entendendo matrizes/"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/Entendendo matrizes/","created":"2025-11-27T15:11:32.505-03:00","updated":"2025-12-02T22:18:51.250-03:00"}
 ---
 
-2025-11-27 15:12
+27-11-2025 15:12
 
-Status:beta
+Status: completo
 
 Tags: [[3 - Tags/programação\|programação]]
 # Entendendo matrizes

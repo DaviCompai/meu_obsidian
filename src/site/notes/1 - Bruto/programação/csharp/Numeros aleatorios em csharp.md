@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/Numeros aleatorios em csharp/"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/Numeros aleatorios em csharp/","created":"2025-11-27T16:07:25.236-03:00","updated":"2025-12-02T22:18:23.451-03:00"}
 ---
 
-2025-11-27 16:07
+26-11-2025 16:07
 
-Status: beta
+Status: alpha
 
 Tags: [[3 - Tags/csharp\|3 - Tags/csharp]]
 # Numeros aleatorios em c#.

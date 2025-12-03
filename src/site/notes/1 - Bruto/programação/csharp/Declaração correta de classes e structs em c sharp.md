@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/Declaração correta de classes e structs em c sharp/"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/Declaração correta de classes e structs em c sharp/","created":"2025-11-26T20:49:14.753-03:00","updated":"2025-11-30T23:54:53.565-03:00"}
 ---
 
-2025-11-26 20:49
+26-11-2025 20:49
 
 Status:beta
 

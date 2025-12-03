@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Exemplo procurar bombas campo minado/","created":"2025-12-02T22:09:04.863-03:00","updated":"2025-12-02T22:51:51.821-03:00"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Exemplo procurar bombas campo minado/","created":"2025-12-02T22:09:04.863-03:00","updated":"2025-12-02T22:52:07.808-03:00"}
 ---
 
 02-12-2025 22:09
@@ -64,7 +64,7 @@ IF não executa.
 
 ---
 Para `xDoBlocoAtual == 2` e `yDoBlocoAtual == 3` 
-![../../../../../7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_9.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_9.png)
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matrizAcharBombas_9.png)
 `campoMinado[3,2].eBomba` é true:
  IF executa: número de bombas cresce (`campoMinado[2,2].bombasAoRedor = 2`)
 
