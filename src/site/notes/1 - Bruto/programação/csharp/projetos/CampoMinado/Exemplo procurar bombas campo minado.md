@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Exemplo procurar bombas campo minado/","created":"2025-12-02T22:09:04.863-03:00","updated":"2025-12-02T22:31:18.451-03:00"}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Exemplo procurar bombas campo minado/","created":"2025-12-02T22:09:04.863-03:00","updated":"2025-12-02T22:51:51.821-03:00"}
 ---
 
 02-12-2025 22:09
@@ -31,7 +31,7 @@ descobrindo a quantidade de números ao redor de `campoMinado[2,2]`
 	}
  }
 ```
- ![](/img/user/7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_1.png)
+ ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matrizAcharBombas_1.png)
 - - - 
 para `xDoBlocoAtual == 1` e `yDoBlocoAtual == 1`:
 ![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matrizAcharBombas_2.png)
@@ -40,7 +40,7 @@ IF executa: número de bombas cresce (`campoMinado[2,2].bombasAoRedor = 1`)
  
  ---
 Para `xDoBlocoAtual == 1` e `yDoBlocoAtual == 2`
-![](/img/user/7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_5.png)
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matrizAcharBombas_5.png)
 `campoMinado[1,2].eBomba` é false:
 IF não executa.
 
@@ -52,7 +52,7 @@ IF não executa.
 
 ---
 Para `xDoBlocoAtual == 2` e `yDoBlocoAtual == 1` 
-![](/img/user/7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_3.png)
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/matrizAcharBombas_3.png)
 `campoMinado[2,1].eBomba` é false:
 IF não executa.
 
@@ -64,7 +64,7 @@ IF não executa.
 
 ---
 Para `xDoBlocoAtual == 2` e `yDoBlocoAtual == 3` 
-![](/img/user/7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_9.png)
+![../../../../../7 - Arquivos/imagens/códigos/campo minado/AcharBomba/matrizAcharBombas_9.png](/img/user/7%20-%20Arquivos/imagens/c%C3%B3digos/campo%20minado/AcharBomba/matrizAcharBombas_9.png)
 `campoMinado[3,2].eBomba` é true:
  IF executa: número de bombas cresce (`campoMinado[2,2].bombasAoRedor = 2`)
 
