@@ -1,21 +1,26 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Campo Minado/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Campo Minado/","tags":["gardenEntry"],"created":"2025-08-09T21:15:23.346-03:00","updated":"2025-12-02T18:53:11.445-03:00"}
 ---
 
-2025-11-26 17:54
+11-26-2025 17:54
 
 Status:beta
 
 Tags: [[3 - Tags/csharp\|csharp]]
+>[!info]- ME CLIQUE!
+>caixas coloridas como essa são clicáveis! elas geralmente tem informações extras e que podem ser uteis para alguns usúarios.
+>
+>[[1 - Bruto/programação/csharp/projetos/CampoMinado/Campo Minado\|SOU UM LINK]]
+>textos roxos são links para outros arquivos.
 # Campo Minado
 
 Este documento tem como objetivo ser um guia para a programação de um jogo de campo minado para o console, feito em C#, sem mostrar todo o código necessário, mas guiando o leitor de forma detalhada do início ao fim do projeto.
+[[1 - Bruto/programação/csharp/projetos/CampoMinado/Identificando os desafios (campo minado)\|Identificando os desafios: processo de criação do campo minado]]
 
-[[1 - Bruto/programação/csharp/projetos/CampoMinado/Onde programar\|Onde programar?]]
+[[1 - Bruto/programação/csharp/projetos/CampoMinado/Onde programar\|Onde programar? (opcional)]]
 
 [[1 - Bruto/programação/Dicas de programação\|Dicas de programação (opcional)]]
 
-[[1 - Bruto/programação/csharp/projetos/CampoMinado/Identificando os desafios (campo minado)\|Identificando os desafios]]
 
 >[!question]- Como uso o site?
 >No celular: Você pode encontrar o mapa na parte inferior de todas as páginas. 
