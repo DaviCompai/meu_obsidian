@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Identificando os desafios (campo minado)/","created":"2025-11-26T19:15:11.283-03:00","updated":"2025-12-02T22:20:09.444-03:00"}
+{"dg-publish":true,"permalink":"/1-bruto/programacao/csharp/projetos/campo-minado/identificando-os-desafios-campo-minado/","created":"2025-11-26T19:15:11.283-03:00","updated":"2025-12-02T22:57:24.815-03:00"}
 ---
 
 26-11-2025 20:11
@@ -130,7 +130,7 @@ Para calcular o número de bombas ao redor de um bloco, você irá precisar esca
 >O código para calcular o número de bombas ao redor só pode ser executado após o campo inteiro ser calculado
 
 Para a primeira parte, você pode usar um código similar a esse:
-
+![](https://raw.githubusercontent.com/DaviCompai/meu_obsidian/imagens/carbon.png)
 >[!abstract]- código
 > ```
 > for (int xAoRedor = xAoRedorMin; xAoRedor <= xAoRedorMax; xAoRedor++)

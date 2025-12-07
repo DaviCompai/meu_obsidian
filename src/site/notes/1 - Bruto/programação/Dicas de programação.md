@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/Dicas de programação/","created":"2025-11-27T23:33:00.897-03:00","updated":"2025-11-30T23:55:16.565-03:00"}
+{"dg-publish":true,"permalink":"/1-bruto/programacao/dicas-de-programacao/","created":"2025-11-27T23:33:00.897-03:00","updated":"2025-11-30T23:55:16.565-03:00"}
 ---
 
 26-11-2025 19:09

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/Numeros aleatorios em csharp/","created":"2025-11-27T16:07:25.236-03:00","updated":"2025-12-02T22:18:23.451-03:00"}
+{"dg-publish":true,"permalink":"/1-bruto/programacao/csharp/numeros-aleatorios-em-csharp/","created":"2025-11-27T16:07:25.236-03:00","updated":"2025-12-02T22:18:23.451-03:00"}
 ---
 
 26-11-2025 16:07

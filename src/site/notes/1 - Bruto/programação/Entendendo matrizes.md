@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/Entendendo matrizes/","created":"2025-11-27T15:11:32.505-03:00","updated":"2025-12-02T22:18:51.250-03:00"}
+{"dg-publish":true,"permalink":"/1-bruto/programacao/entendendo-matrizes/","created":"2025-11-27T15:11:32.505-03:00","updated":"2025-12-02T22:18:51.250-03:00"}
 ---
 
 27-11-2025 15:12

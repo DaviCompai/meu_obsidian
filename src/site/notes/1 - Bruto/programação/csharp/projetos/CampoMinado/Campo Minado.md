@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/projetos/CampoMinado/Campo Minado/","tags":["gardenEntry"],"created":"2025-08-09T21:15:23.346-03:00","updated":"2025-12-02T22:15:41.656-03:00"}
+{"dg-publish":true,"permalink":"/1-bruto/programacao/csharp/projetos/campo-minado/campo-minado/","tags":["gardenEntry"],"created":"2025-08-09T21:15:23.346-03:00","updated":"2025-12-02T22:15:41.656-03:00"}
 ---
 
 11-26-2025 17:54

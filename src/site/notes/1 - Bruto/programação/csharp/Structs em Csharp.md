@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 - Bruto/programação/csharp/Structs em Csharp/","created":"2025-11-27T14:16:42.836-03:00","updated":"2025-11-30T23:55:07.568-03:00"}
+{"dg-publish":true,"permalink":"/1-bruto/programacao/csharp/structs-em-csharp/","created":"2025-11-27T14:16:42.836-03:00","updated":"2025-11-30T23:55:07.568-03:00"}
 ---
 
 26-11-2025 20:49
